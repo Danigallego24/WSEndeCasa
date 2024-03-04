@@ -58,7 +58,7 @@ public class Casa {
 	public void setHabitacion(Habitacion habitacion) {
 		this.habitacion = habitacion;
 	}
-	@Override
+	
 	public String toString() {
 		return "Casa [precio=" + precio + ", esSegundaMano=" + esSegundaMano + ", metrosCuadrados=" + metrosCuadrados
 				+ "]";
