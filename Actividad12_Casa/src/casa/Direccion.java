@@ -54,7 +54,5 @@ public class Direccion {
 		return "Direccion [tipoVia=" + tipoVia + ", nombreVia=" + nombreVia + ", localidad=" + localidad
 				+ ", codigoPostal=" + codigoPostal + "]";
 	}
-	
-	
 
 }

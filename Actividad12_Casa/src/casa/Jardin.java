@@ -4,11 +4,6 @@ public class Jardin {
 
 	private int metrosCuadrados;
 	private int numeroDePlantas;
-	
-	public Jardin(int metrosCuadrados, int numeroDePlantas) {
-		this.metrosCuadrados = metrosCuadrados;
-		this.numeroDePlantas = numeroDePlantas;
-	}
 
 	public int getMetrosCuadrados() {
 		return metrosCuadrados;
@@ -25,4 +20,5 @@ public class Jardin {
 	public void setNumeroDePlantas(int numeroDePlantas) {
 		this.numeroDePlantas = numeroDePlantas;
 	}
+	
 }
