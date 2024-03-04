@@ -64,6 +64,7 @@ public class Casa {
 				+ "]";
 	}
 	
+
 	public double precioIVA(){
 		double precioIVA = 0;
 		if(esSegundaMano == true) {
@@ -74,6 +75,20 @@ public class Casa {
 		return precioIVA;
 	}
 	
+	//Metodo para calcular los metros cuadrados(MAURI)
+	public double calcularMetrosCuadrados() {
+        double totalMetros = 0;
+        // Sumar los metros cuadrados de todas las habitaciones
+        for (Habitacion habitacion : habitaciones) {
+            totalMetros += habitacion.getMetrosCuadrados();
+        }
+        // Sumar los metros cuadrados del jardín
+        if (jardin != null) {
+            totalMetros += jardin.getMetrosCuadrados();
+        }
+        return totalMetros;
+    }
+
 	
 	
 	
