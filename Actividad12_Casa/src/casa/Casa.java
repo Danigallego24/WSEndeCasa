@@ -48,6 +48,10 @@ public class Casa {
 		return "Casa [precio=" + precio + ", esSegundaMano=" + esSegundaMano + ", metrosCuadrados=" + metrosCuadrados
 				+ "]";
 	}
+	public boolean Chalet() {
+        return jardin != null;
+    }
+	
 	
 	
 	
