@@ -64,7 +64,13 @@ public class Casa {
 				+ "]";
 	}
 	
-	
+	public double precioIVA(){
+		double precioIVA = 0;
+		if(esSegundaMano == true) {
+			precioIVA = precio + precio *.05;
+		}
+		return precioIVA;
+	}
 	
 	
 	
