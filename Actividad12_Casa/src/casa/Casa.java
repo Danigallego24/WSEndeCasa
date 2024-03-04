@@ -1,5 +1,7 @@
 package casa;
 
+import javax.swing.plaf.synth.SynthDesktopPaneUI;
+
 public class Casa {
 	private Direccion direccion;
 	private double precio;
@@ -7,9 +9,22 @@ public class Casa {
 	private int metrosCuadrados;
 	private Jardin jardin;
 	private Habitacion habitacion;
+	
 	public Direccion getDireccion() {
 		return direccion;
 	}
+	
+	public Casa(Direccion direccion, double precio, boolean esSegundaMano, int metrosCuadrados, Jardin jardin,
+			Habitacion habitacion) {
+		super();
+		this.direccion = direccion;
+		this.precio = precio;
+		this.esSegundaMano = esSegundaMano;
+		this.metrosCuadrados = metrosCuadrados;
+		this.jardin = jardin;
+		this.habitacion = habitacion;
+	}
+	
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
@@ -48,6 +63,9 @@ public class Casa {
 		return "Casa [precio=" + precio + ", esSegundaMano=" + esSegundaMano + ", metrosCuadrados=" + metrosCuadrados
 				+ "]";
 	}
+	
+	
+	
 	
 	
 	
