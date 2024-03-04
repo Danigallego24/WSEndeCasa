@@ -68,6 +68,8 @@ public class Casa {
 		double precioIVA = 0;
 		if(esSegundaMano == true) {
 			precioIVA = precio + precio *.05;
+		}else {
+			precioIVA = precio + precio *.10;
 		}
 		return precioIVA;
 	}
