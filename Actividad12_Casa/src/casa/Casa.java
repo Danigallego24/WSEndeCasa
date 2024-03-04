@@ -7,6 +7,7 @@ public class Casa {
 	private int metrosCuadrados;
 	private Jardin jardin;
 	private Habitacion habitacion;
+	
 	public Direccion getDireccion() {
 		return direccion;
 	}
@@ -48,6 +49,20 @@ public class Casa {
 		return "Casa [precio=" + precio + ", esSegundaMano=" + esSegundaMano + ", metrosCuadrados=" + metrosCuadrados
 				+ "]";
 	}
+	
+	//Metodo para calcular los metros cuadrados(MAURI)
+	public double calcularMetrosCuadrados() {
+        double totalMetros = 0;
+        // Sumar los metros cuadrados de todas las habitaciones
+        for (Habitacion habitacion : habitaciones) {
+            totalMetros += habitacion.getMetrosCuadrados();
+        }
+        // Sumar los metros cuadrados del jardín
+        if (jardin != null) {
+            totalMetros += jardin.getMetrosCuadrados();
+        }
+        return totalMetros;
+    }
 	
 	
 	

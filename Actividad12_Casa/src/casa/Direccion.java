@@ -8,6 +8,21 @@ public class Direccion {
 	private String localidad;
 	private int codigoPostal;
 	
+	//Constructores
+	public Direccion() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Direccion(String tipoVia, String nombreVia, String localidad, int codigoPostal) {
+		super();
+		this.tipoVia = tipoVia;
+		this.nombreVia = nombreVia;
+		this.localidad = localidad;
+		this.codigoPostal = codigoPostal;
+	}
+	
+	//Getters and Setters
 	public String getTipoVia() {
 		return tipoVia;
 	}
@@ -33,6 +48,7 @@ public class Direccion {
 		this.codigoPostal = codigoPostal;
 	}
 	
+	//Metodo toString
 	@Override
 	public String toString() {
 		return "Direccion [tipoVia=" + tipoVia + ", nombreVia=" + nombreVia + ", localidad=" + localidad
